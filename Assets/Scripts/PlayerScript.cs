@@ -46,7 +46,7 @@ public class PlayerScript : MonoBehaviour
 
     private void ResetState()
 	{
-        transform.position = new Vector3(-2.3f, 5.2f, 0f);
+        transform.position = new Vector3(-1.65f, 5.2f, 0f);
         movement = 1;
     }
 }
