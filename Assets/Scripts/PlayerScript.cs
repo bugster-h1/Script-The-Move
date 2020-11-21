@@ -13,6 +13,11 @@ public class PlayerScript : MonoBehaviour
     private Vector3 m_Velocity = Vector3.zero;
     private float movement;
 
+    public void ReverseMovement()
+	{
+        movement *= -1;
+	}
+
     private void Awake()
     {
         m_Rigidbody2D = GetComponent<Rigidbody2D>();
