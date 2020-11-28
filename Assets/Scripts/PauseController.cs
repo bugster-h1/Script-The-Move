@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class PauseController : MonoBehaviour
 {
-    public GameObjectPause[] gameObjects;
+    public GameObject[] gameObjects;
 
     public void TogglePause()
 	{
@@ -13,14 +13,8 @@ public class PauseController : MonoBehaviour
 
 		foreach (var item in gameObjects)
 		{
-			item.GameObject.SetActive(!item.GameObject.activeSelf);
+			item.SetActive(!item.activeSelf);
 		}
 	}
 }
 
-[Serializable]
-public class GameObjectPause
-{
-    public GameObject GameObject;
-    public bool SetActive;
-}

@@ -10,11 +10,15 @@ public class LevelLoader : MonoBehaviour
 
 	public void RestartScene()
 	{
+		Time.timeScale = 1f;
+
 		LoadScene(SceneManager.GetActiveScene().name);
 	}
 
 	public void LoadScene(string sceneName)
 	{
+		Time.timeScale = 1f;
+
 		StartCoroutine(LoadSceneCoroutine(sceneName));
 	}
 
